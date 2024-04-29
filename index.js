@@ -43,6 +43,11 @@ const icecreamReducer = (state = initialIcecreamState, action) => {
         ...state,
         numberOfIceCream: state.numberOfIceCream - 1,
       };
+    case "BUY_CAKE":
+      return {
+        ...state,
+        numberOfIceCream: state.numberOfIceCream - 1,
+      };
     default:
       return state;
   }
